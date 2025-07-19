@@ -4,6 +4,6 @@ using System.Collections.Specialized;
 
 namespace CQRS.Practice.Infraestructure.Commands
 {
-    public record CreateTaskCommand(string Title, StringDictionary Description) : IRequest<TaskItemDto>;
+    public record CreateTaskCommand(string Title, string Description) : IRequest<TaskItemDto>;
 
 }
